@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a brief desc">
+    <link rel="stylesheet" href="doTatr.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+        <!--<header class="w-full h-20 bg-green-500"> </header> -->
+        <!--<body style="background-color:rgb(166, 223, 181);">-->
+        <div class="container">
+            <img src="https://www.domkipanorama.pl/wp-content/uploads/2021/11/panorama-tatr.jpg" alt="" style="margin-left:70px; margin-right:70px; margin-top:20px;"/>
+            <div class="centered">Tatra Mountains</div>
+            <!--<a href="/">Tatra Mountains</a>-->
+        </div>
+        <br>
+        <div>
+            <p class="text-center" style="margin-left:150px; margin-right:150px;">Tatra, the highest mountain range in polish territory, including highest massif in Carpathian chain. It counts as much as 60 km in lenght and from 15 to 20 km width. The whole area covers around 800 km². Because of its landform, Tatra mountains are divided into Bielskie Tatras (Hawrań 2152 m above sea level), High Tatras (Gerlach 2655 m above sea level.) and West Tatras (Bystra 2248 above sea level). Located between four geo-historical lands: Liptow, Orawa, Podhale and Spisz, while through Tatra, Orawa and Spisz goes polish-slovak border. Poland owns 175 km² of Tatra surface. Its protected by two national parks (Tatrzański Park Narodowy, TPN in Poland and Tatranský národný park, TANAP in Slovakia).</p>    
+            <br>
+            <p class="text-center" style="margin-left:150px; margin-right:150px;">Tatra mountains are exceptional for many reasons: natural, historical, cultural. They have much peculiar exploration history and unchanging popularity both among tourists and explorers. Trails layout from Tatra National Park counts 275 km.</p>        
+            <br>
+            <p class="text-center" style="margin-left:150px; margin-right:150px;">You can practice both walking, climbing, skiing (downhill, cross-country, skitour) as well as restricted mountain biking. Guests can make use of mountain shelters of PTTK (on Chochołowska Clearing, Ornak Hall, Kondratowa Hall, Gąsienicowa Hall, Roztoka, Valley of Five Ponds and on Morskie Oko). Thanks to the cultural sheep pasturage program, tourists can taste original oscypkis and drink zéntyca (sheep milk whey). They can also hear genuine podhale highlander dialect and see them in their regional outfits.</p>    
+            <br>
+            <p class="text-center">We cordially invite you to see the most beautiful region in Poland.</p>   
+            <br>
+            <a href="https://www.zakopane.pl/en/tourist-area/tourism/tatra-mountains" target="_blank" rel="noopener noreferrer" id= "link" style="text-decoration-color: blue;">Source: Click here to see the official website</a>
+            <br>
+        </div>
+
+        <div class="container">
+            <br>
+            <img src="https://tatromaniak.pl/wp-content/uploads/2017/06/img_3836-pano-bezkrop25000strona-830x460-c-default.jpg" id = "zdjecie"/>
+           
+            <button class="btn" onclick="ShowHeight()" style="background-color: gray;">Highest peak</button>
+            <p id="test">Rysy</p>
+            <script>
+                function ShowHeight(){ 
+                    document.getElementById("test").innerHTML = "2503 mnpm";
+                }
+            </script>
+        </div>
+        
+        <br>
+
+        <div>
+            <p class="text-center">To get the newest updates about events and organised trips in our mountains sign up for the newsletter using the form below:</p>
+        </div>
+    
+    <form action="https://example.com/contact-form" method="POST" class="max-w-md mx-auto my-10 flex-col gap-5">
+        <div class="flex justify-between">
+            <label class="text-lg text-gray-900" for="">Full name</label>
+            <input type="text" class="border border-gray-500 p-2"/>
+        </div>
+        <br>
+        <div class="flex justify-between">
+            <label class="text-lg text-gray-900" for="">Email</label>
+            <input type="email" class="border border-gray-500 p-2"/>
+        </div>
+        <br>
+        <div class="text-center">
+            <button class="px-5 py-2 bg-green-600 text-white">Send</button>
+        </div>       
+    </form>
+    
+    <br>
+    <div>
+        <p class="text-center" style="margin-left:150px; margin-right:150px;">How much do you like our mountains?</p>
+        <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <br>
+    <br>
+
+</body>
+</html>
